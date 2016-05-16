@@ -1,0 +1,19 @@
+{
+  "name": "RevStack.Commerce",
+  "version": "1.0.0",
+  "description": "RevStack commerce class library",
+  "main": "RevStack.Commerce.sln",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevStack/Commerce.git"
+  },
+  "author": "S. Francis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RevStack/Commerce/issues"
+  },
+  "homepage": "https://github.com/RevStack/Commerce"
+}
