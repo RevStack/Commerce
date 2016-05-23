@@ -56,3 +56,7 @@
 \\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Commerce\RevStack.Commerce\obj\Release\RevStack.Commerce.csprojResolveAssemblyReference.cache
 \\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Commerce\RevStack.Commerce\obj\Release\RevStack.Commerce.dll
 \\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Commerce\RevStack.Commerce\obj\Release\RevStack.Commerce.pdb
+\\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Commerce\RevStack.Commerce\bin\Release\RevStack.Configuration.dll
+\\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Commerce\RevStack.Commerce\bin\Release\RevStack.Configuration.pdb
+\\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Commerce\RevStack.Commerce\bin\Release\RevStack.Net.dll
+\\Mac\Home\Documents\Development\mono\RevStack\updated\RevStack.Commerce\RevStack.Commerce\bin\Release\RevStack.Net.pdb

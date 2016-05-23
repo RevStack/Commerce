@@ -1,5 +1,6 @@
 ﻿using System;
 using RevStack.Pattern;
+using RevStack.Notification;
 
 namespace RevStack.Commerce
 {

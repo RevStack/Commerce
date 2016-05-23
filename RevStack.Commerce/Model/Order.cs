@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using RevStack.Mvc;
+using RevStack.Configuration;
 
 namespace RevStack.Commerce
 {
@@ -34,16 +35,16 @@ namespace RevStack.Commerce
     {
         public ApplicationOrder()
         {
-            Id = Utils.GenerateRandomNumberString(Settings.OrderKeyLength);
+            Id = Utils.GenerateRandomNumberString(Order.KeyLength);
         }
         public ApplicationOrder(bool isAuthenticated)
         {
-            Id = Utils.GenerateRandomNumberString(Settings.OrderKeyLength);
+            Id = Utils.GenerateRandomNumberString(Order.KeyLength);
             IsAuthenticatedUser = isAuthenticated;
         }
         public ApplicationOrder(bool isAuthenticated, string baseTrackingUrl)
         {
-            Id = Utils.GenerateRandomNumberString(Settings.OrderKeyLength);
+            Id = Utils.GenerateRandomNumberString(Order.KeyLength);
             IsAuthenticatedUser = isAuthenticated;
             TrackingUrl = baseTrackingUrl + Id.ToString();
         }

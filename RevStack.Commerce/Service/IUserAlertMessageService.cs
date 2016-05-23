@@ -7,7 +7,7 @@ namespace RevStack.Commerce
 {
     public interface IUserAlertMessageService<TKey>
     {
-        UserAlertMessage<TKey> Get(NotifyAlert<TKey> entity, UriUtility uri);
-        Task<UserAlertMessage<TKey>> GetAsync(NotifyAlert<TKey> entity, UriUtility uri);
+        AlertMessage<TKey> Get(NotifyAlert<TKey> entity, UriUtility uri);
+        Task<AlertMessage<TKey>> GetAsync(NotifyAlert<TKey> entity, UriUtility uri);
     }
 }

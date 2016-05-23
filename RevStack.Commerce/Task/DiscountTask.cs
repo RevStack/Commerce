@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using RevStack.Configuration;
 
 namespace RevStack.Commerce
 {
@@ -38,21 +39,21 @@ namespace RevStack.Commerce
         {
             if (discount == null)
             {
-                return new Tuple<bool, string>(false, Settings.PromotionInvalidMessage);
+                return new Tuple<bool, string>(false, Promotion.InvalidMessage);
             }
             else
             {
                 if (discount.Expires && discount.ExpirationDate < DateTime.Now)
                 {
-                    return new Tuple<bool, string>(false, "The " + Settings.PromotionLabel + " code has expired");
+                    return new Tuple<bool, string>(false, "The " + Promotion.Label + " code has expired");
                 }
                 else if (discount.MinValue != null && discount.MinValue > bag.Subtotal)
                 {
-                    return new Tuple<bool, string>(false, "The " + Settings.PromotionLabel + " code requires a min purchase amount of " + Convert.ToDecimal(discount.MinValue).ToString("C"));
+                    return new Tuple<bool, string>(false, "The " + Promotion.Label + " code requires a min purchase amount of " + Convert.ToDecimal(discount.MinValue).ToString("C"));
                 }
                 else if (bag.DiscountItems.Where(x => x.Code.ToLower() == discount.Code.ToLower()).Any())
                 {
-                    return new Tuple<bool, string>(false, "The " + Settings.PromotionLabel + "  code has already been added");
+                    return new Tuple<bool, string>(false, "The " + Promotion.Label + "  code has already been added");
                 }
                 else
                 {
