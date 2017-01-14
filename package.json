@@ -1,6 +1,6 @@
 {
   "name": "RevStack.Commerce",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "RevStack commerce class library",
   "main": "RevStack.Commerce.sln",
   "scripts": {
